@@ -1,4 +1,75 @@
-@import './content.less';
-@import './edit.less';
 @import "../../assets/style/index.less";
 
+@homepage: home-page;
+.@{homepage}-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .@{homepage} {
+    height: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+    //will-change: transform;
+  }
+  .title-wrapper > h1, > h1 {
+    font-size: 32px;
+    color: @text-color;
+    margin-bottom: 16px;
+  }
+  .title-wrapper {
+    margin: 0 auto 64px;
+    text-align: center;
+  }
+}
+
+.home-page-wrapper p {
+  padding: 0;
+  margin: 0;
+}
+
+.@{homepage} {
+  padding: 128px 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .@{homepage}-wrapper {
+    .@{homepage} {
+      padding: 56px 24px;
+      >h1 {
+        font-size: 24px;
+        margin: 0 auto 32px;
+        &.title-h1 {
+          margin-bottom: 8px;
+        }
+      }
+      >p {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+
+#Banner .banner0-text-wrapper > .kdfle4njens-editor_css {
+  opacity: 0;
+}
+#Banner .banner0-text-wrapper > .kdfle0wr33p-editor_css {
+  font-size: 16px;
+}
+#Banner .banner0-text-wrapper > .kdflatelklc-editor_css {
+  font-size: 42px;
+  position: static;
+}
+#Nav.kdfllcy10k-editor_css {
+  color: rgba(0, 0, 0, 0);
+}
+#Banner.kdflaz06unm-editor_css {
+  //background-image: ;
+  //background-attachment: ;
+  //background-blend-mode: ;
+  //background-position: ;
+  //background-repeat: ;
+  //background-size: ;
+  //background-clip: ;
+}

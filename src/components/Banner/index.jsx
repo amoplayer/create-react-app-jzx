@@ -3,9 +3,10 @@ import { Button } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
-import { isImg } from './utils';
+import { isImg } from '../../utils';
+import './banner.less';
 
-class Banner extends React.PureComponent {
+class Index extends React.PureComponent {
   render() {
     const { ...currentProps } = this.props;
     const { dataSource } = currentProps;
@@ -50,4 +51,4 @@ class Banner extends React.PureComponent {
     );
   }
 }
-export default Banner;
+export default Index;

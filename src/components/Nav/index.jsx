@@ -1,7 +1,8 @@
 import React from 'react';
 import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
-import { getChildrenToRender } from './utils';
+import { getChildrenToRender } from '../../utils';
+import './nav.less';
 
 const { Item, SubMenu } = Menu;
 
