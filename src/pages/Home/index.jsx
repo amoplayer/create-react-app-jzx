@@ -3,16 +3,16 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
-import Nav from '../components/Nav';
-import Banner from '../components/Banner';
-import Feature from '../components/Feature';
-import Footer from '../components/Footer';
+import Nav from '../../components/Nav';
+import Banner from '../../components/Banner';
+import Feature from '../../components/Feature';
+import Footer from '../../components/Footer';
 
 import {
-  Nav00DataSource,
-  Banner01DataSource,
-  Feature00DataSource,
-  Footer10DataSource,
+  NavDataSource,
+  BannerDataSource,
+  FeatureDataSource,
+  FooterDataSource,
 } from './data.source';
 
 import './less/index.less';
@@ -56,25 +56,25 @@ export default class Home extends React.Component {
       <Nav
         id="Nav"
         key="Nav"
-        dataSource={Nav00DataSource}
+        dataSource={NavDataSource}
         isMobile={this.state.isMobile}
       />,
       <Banner
         id="Banner"
         key="Banner"
-        dataSource={Banner01DataSource}
+        dataSource={BannerDataSource}
         isMobile={this.state.isMobile}
       />,
       <Feature
         id="Feature"
         key="Feature"
-        dataSource={Feature00DataSource}
+        dataSource={FeatureDataSource}
         isMobile={this.state.isMobile}
       />,
       <Footer
         id="Footer"
         key="Footer"
-        dataSource={Footer10DataSource}
+        dataSource={FooterDataSource}
         isMobile={this.state.isMobile}
       />,
     ];

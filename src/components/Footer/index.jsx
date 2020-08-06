@@ -9,7 +9,7 @@ import './footer.less';
 
 class Footer extends React.Component {
   static defaultProps = {
-    className: 'footer1',
+    className: 'footer',
   };
 
   getLiChildren = (data) =>

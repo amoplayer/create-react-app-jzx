@@ -35,12 +35,12 @@ class Header extends React.Component {
             title={
               <div
                 {...a}
-                className={`header0-item-block ${a.className}`.trim()}
+                className={`header-item-block ${a.className}`.trim()}
               >
                 {a.children.map(getChildrenToRender)}
               </div>
             }
-            popupClassName="header0-item-child"
+            popupClassName="header-item-child"
           >
             {subItem.map(($item, ii) => {
               const { children: childItem } = $item;
@@ -64,7 +64,7 @@ class Header extends React.Component {
       }
       return (
         <Item key={item.name} {...itemProps}>
-          <a {...a} className={`header0-item-block ${a.className}`.trim()}>
+          <a {...a} className={`header-item-block ${a.className}`.trim()}>
             {a.children.map(getChildrenToRender)}
           </a>
         </Item>

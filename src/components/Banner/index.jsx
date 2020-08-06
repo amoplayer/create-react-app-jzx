@@ -42,7 +42,7 @@ class Index extends React.PureComponent {
             repeat: -1,
             duration: 1000,
           }}
-          className="banner0-icon"
+          className="banner-icon"
           key="icon"
         >
           <DownOutlined />
