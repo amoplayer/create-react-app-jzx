@@ -6,26 +6,17 @@ export const BannerDataSource = {
     title: {
         className: 'banner-title kdflatelklc-editor_css',
         children: (
-            <span>
-                <p>紧跟政策法规变化</p>
-            </span>
+            <p>紧跟政策法规变化</p>
         ),
     },
     content: {
         className: 'banner-content kdfle0wr33p-editor_css',
         children: (
-            <span>
-                <p>深耕人力资源、共享经济服务行业</p>
-            </span>
+            <p>深耕人力资源、共享经济服务行业</p>
         ),
     },
     button: {
-        className: 'banner-button kdfle4njens-editor_css',
-        children: (
-            <span>
-                <p>Learn More</p>
-            </span>
-        ),
+        className: 'banner-button kdfle4njens-editor_css'
     },
 };
 
@@ -146,10 +137,8 @@ export const FeatureCardDataSource = {
                 className: 'feature-card-title-h1',
                 children: (
                     <span>
-            <span>
-              <p>COMPANY CULTURE</p>
-            </span>
-          </span>
+                        <p>COMPANY CULTURE</p>
+                    </span>
                 ),
             },
             {
@@ -157,10 +146,8 @@ export const FeatureCardDataSource = {
                 className: 'feature-card-title-content',
                 children: (
                     <span>
-            <span>
-              <p>公司理念</p>
-            </span>
-          </span>
+                        <p>公司理念</p>
+                    </span>
                 ),
             },
         ],
@@ -188,10 +175,8 @@ export const FeatureCardDataSource = {
                             className: 'feature-card-block-title',
                             children: (
                                 <span>
-                  <span>
-                    <p>风控先行</p>
-                  </span>
-                </span>
+                                    <p>风控先行</p>
+                                </span>
                             ),
                         },
                         {
@@ -199,12 +184,10 @@ export const FeatureCardDataSource = {
                             className: 'feature-card-block-content',
                             children: (
                                 <span>
-                  <span>
-                    <p>
-                      公司定位：数字风控，360°安全守护，用安全、合规、高效服务大众
-                    </p>
-                  </span>
-                </span>
+                                    <p>
+                                      公司定位：数字风控，360°安全守护，用安全、合规、高效服务大众
+                                    </p>
+                                </span>
                             ),
                         },
                     ],
@@ -229,10 +212,10 @@ export const FeatureCardDataSource = {
                             className: 'feature-card-block-title',
                             children: (
                                 <span>
-                  <span>
-                    <p>专业极致</p>
-                  </span>
-                </span>
+                                    <span>
+                                       <p>专业极致</p>
+                                    </span>
+                                </span>
                             ),
                         },
                         {
@@ -240,16 +223,10 @@ export const FeatureCardDataSource = {
                             className: 'feature-card-block-content',
                             children: (
                                 <span>
-                  <span>
-                    <span>
-                      <span>
-                        <p>
-                          经营理念："为我所有"到"为我所用"的企业经营管理新思维
-                        </p>
-                      </span>
-                    </span>
-                  </span>
-                </span>
+                                    <p>
+                                        经营理念："为我所有"到"为我所用"的企业经营管理新思维
+                                    </p>
+                                </span>
                             ),
                         },
                     ],
@@ -274,10 +251,10 @@ export const FeatureCardDataSource = {
                             className: 'feature-card-block-title',
                             children: (
                                 <span>
-                  <span>
-                    <p>合作共赢</p>
-                  </span>
-                </span>
+                                    <span>
+                                        <p>合作共赢</p>
+                                    </span>
+                                </span>
                             ),
                         },
                         {
@@ -285,14 +262,14 @@ export const FeatureCardDataSource = {
                             className: 'feature-card-block-content',
                             children: (
                                 <span>
-                  <span>
-                    <span>
-                      <p>
-                        团队管理：尊重人才，敬重专业，员工与公司共发展，以服务赢得市场，以品质满意客户
-                      </p>
-                    </span>
-                  </span>
-                </span>
+                                    <span>
+                                        <span>
+                                            <p>
+                                                团队管理：尊重人才，敬重专业，员工与公司共发展，以服务赢得市场，以品质满意客户
+                                            </p>
+                                        </span>
+                                    </span>
+                                </span>
                             ),
                         },
                     ],
@@ -314,8 +291,8 @@ export const FeatureLeftDataSource = {
         className: 'feature-left-title',
         children: (
             <span>
-        <p>公司简介</p>
-      </span>
+                <p>公司简介</p>
+            </span>
         ),
     },
     content: {
@@ -328,7 +305,7 @@ export const FeatureLeftDataSource = {
                         总部位于浙江杭州，旗下的人力服务机构最早成立于2010年，于2014年起开始对多家人力公司进行整合，在南京、宁波、上海、深圳、成都等地设立八家全资控股子公司，在北京、广州拥有多家参股公司。业务涵盖服务外包、人才派遣、人事代理、薪酬优化、政府采购、福利外包、自由职业者、建筑劳务等综合服务。公司拥有来自全国各地的人力专家，均拥有超过10年以上的行业服务经验；截止2018年，公司在全国合作的集团客户有3000多家，合作的个人客户50000+。未来，益兴集团将整合集团和社会资源，倾力打造“益兴人力资源”的品牌，建设成为国内最大的人税法系统解决方案提供商。
                     </span>
                 </p>
-              </span>
+            </span>
         ),
     },
 };
@@ -344,8 +321,8 @@ export const ContentDataSource = {
                 name: 'title',
                 children: (
                     <span>
-            <p>Enterpriset Risk Control</p>
-          </span>
+                        <p>Enterpriset Risk Control</p>
+                    </span>
                 ),
                 className: 'title-h1',
             },
@@ -354,8 +331,8 @@ export const ContentDataSource = {
                 className: 'title-content',
                 children: (
                     <span>
-            <p>企业大数据风控</p>
-          </span>
+                        <p>企业大数据风控</p>
+                    </span>
                 ),
             },
         ],
@@ -448,10 +425,10 @@ export const ContentBusinessDataSource = {
                 name: 'title',
                 children: (
                     <span>
-            <span>
-              <p>3000+企业用户的选择</p>
-            </span>
-          </span>
+                        <span>
+                            <p>3000+企业用户的选择</p>
+                        </span>
+                    </span>
                 ),
                 className: 'title-h1',
             },

@@ -6,25 +6,21 @@ export const BannerDataSource = {
     title: {
         className: 'banner-title kdflatelklc-editor_css',
         children: (
-            <span>
-        <p>益兴致力于</p>
-      </span>
+            <p>益兴致力于</p>
         ),
     },
     content: {
         className: 'banner-content kdfle0wr33p-editor_css',
         children: (
-            <span>
-        <p>成为中国最具影响力的企业人力资源+税务+法务系统解决方案提供商</p>
-      </span>
+            <p>成为中国最具影响力的企业人力资源+税务+法务系统解决方案提供商</p>
         ),
     },
     button: {
         className: 'banner-button kdfle4njens-editor_css',
         children: (
             <span>
-        <p>Learn More</p>
-      </span>
+                <p>Learn More</p>
+             </span>
         ),
     },
 };
