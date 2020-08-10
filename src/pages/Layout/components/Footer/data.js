@@ -1,0 +1,163 @@
+import React from 'react';
+
+export const FooterDataSource = {
+    wrapper: { className: 'home-page-wrapper footer-wrapper' },
+    OverPack: { className: 'footer', playScale: 0.2 },
+    block: {
+        className: 'home-page',
+        gutter: 0,
+        children: [
+            {
+                name: 'block1',
+                xs: 24,
+                md: 6,
+                className: 'block',
+                title: {
+                    children: (
+                        <span>
+              <p>三库一云</p>
+            </span>
+                    ),
+                },
+                childWrapper: {
+                    children: [
+                        {
+                            name: 'link0',
+                            to: '',
+                            children: (
+                                <span>
+                  <p>人事外包产品库</p>
+                </span>
+                            ),
+                        },
+                        {
+                            name: 'link1',
+                            to: '',
+                            children: (
+                                <span>
+                  <p>税收筹划产品库</p>
+                </span>
+                            ),
+                        },
+                        {
+                            name: 'link2',
+                            to: '',
+                            children: (
+                                <span>
+                  <span>
+                    <p>增值服务产品库</p>
+                  </span>
+                </span>
+                            ),
+                        },
+                        {
+                            name: 'link3',
+                            to: '',
+                            children: (
+                                <span>
+                  <p>专家云</p>
+                </span>
+                            ),
+                        },
+                    ],
+                },
+            },
+            {
+                name: 'block2',
+                xs: 24,
+                md: 6,
+                className: 'block',
+                title: { children: '关于' },
+                childWrapper: {
+                    children: [
+                        {
+                            to: '',
+                            name: 'link0',
+                            children: (
+                                <span>
+                  <span>
+                    <p>客服热线：4000098708</p>
+                  </span>
+                </span>
+                            ),
+                        },
+                        {
+                            to: '',
+                            name: 'link1',
+                            children: (
+                                <span>
+                  <span>
+                    <p>商务合作：zhang.rong@esing.net (工作时段24小时回复)</p>
+                  </span>
+                </span>
+                            ),
+                        },
+                    ],
+                },
+            },
+            {
+                name: 'block3',
+                xs: 24,
+                md: 6,
+                className: 'block',
+                title: {
+                    children: (
+                        <span>
+              <p>公众号</p>
+            </span>
+                    ),
+                },
+                childWrapper: {
+                    children: [
+                        {
+                            name: 'image~kdflxl41qzd',
+                            className: '',
+                            children:
+                                'https://zos.alipayobjects.com/rmsportal/HzvPfCGNCtvGrdk.png',
+                        },
+                    ],
+                },
+            },
+            {
+                name: 'block~kdflqp2anyj',
+                xs: 24,
+                md: 6,
+                className: 'block',
+                title: {
+                    children: (
+                        <span>
+              <span>
+                <span>
+                  <p>人力宝</p>
+                </span>
+              </span>
+            </span>
+                    ),
+                },
+                childWrapper: {
+                    children: [
+                        {
+                            name: 'image~kdflxajvxu6',
+                            className: '',
+                            children:
+                                'https://zos.alipayobjects.com/rmsportal/HzvPfCGNCtvGrdk.png',
+                        },
+                    ],
+                },
+            },
+        ],
+    },
+    copyrightWrapper: { className: 'copyright-wrapper' },
+    copyrightPage: { className: 'home-page' },
+    copyright: {
+        className: 'copyright',
+        children: (
+            <span>
+        <span>©</span>
+        <span>
+          浙ICP备19043834号-1&nbsp; &nbsp; &nbsp; &nbsp;
+        </span>浙江益兴劳务服务有限公司
+      </span>
+        ),
+    },
+};

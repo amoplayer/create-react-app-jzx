@@ -3,9 +3,10 @@ import TweenOne from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import QueueAnim from 'rc-queue-anim';
 import { Row, Col } from 'antd';
-import { getChildrenToRender } from '../../utils';
-import { isImg } from '../../utils';
+import { getChildrenToRender } from '../../../../utils';
+import { isImg } from '../../../../utils';
 import './footer.less';
+import { FooterDataSource } from './data'
 
 class Footer extends React.Component {
   static defaultProps = {
@@ -34,9 +35,7 @@ class Footer extends React.Component {
 
   render() {
     const { ...props } = this.props;
-    const { dataSource } = props;
-    delete props.dataSource;
-    delete props.isMobile;
+    const dataSource = FooterDataSource;
     const childrenToRender = this.getLiChildren(dataSource.block.children);
     return (
       <div {...props} {...dataSource.wrapper}>

@@ -3,9 +3,9 @@ import { enquireScreen } from 'enquire-js';
 import Banner from '../../components/Banner';
 import Feature from '../../components/Feature';
 import {
-  BannerDataSource,
   FeatureDataSource,
-} from '../../utils/data.source';
+  BannerDataSource,
+} from './data';
 
 let isMobile;
 enquireScreen((b) => {

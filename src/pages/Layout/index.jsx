@@ -1,21 +1,12 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
-
-import Nav from '../../components/Nav';
-import Footer from '../../components/Footer';
-
-import {
-  NavDataSource,
-  FooterDataSource,
-} from '../../utils/data.source';
-
+import Nav from './components/Nav';
+import Footer from './components/Footer';
 import './less/index.less';
-
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-
 import { Layout } from 'antd';
 import home from '../home';
 import about from '../about';
@@ -58,7 +49,6 @@ export default class ROUTER extends React.Component {
           <Nav
             id="Nav"
             key="Nav"
-            dataSource={NavDataSource}
             isMobile={this.state.isMobile}
           />
           <Route exact path="/" component={ home } />
@@ -66,8 +56,6 @@ export default class ROUTER extends React.Component {
           <Footer
             id="Footer"
             key="Footer"
-            dataSource={FooterDataSource}
-            isMobile={this.state.isMobile}
           />
         </Layout>
       </Router>;
