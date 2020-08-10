@@ -4,6 +4,7 @@ import { Menu } from 'antd';
 import { getChildrenToRender } from '../../utils';
 import './nav.less';
 
+
 const { Item, SubMenu } = Menu;
 
 class Header extends React.Component {
@@ -20,13 +21,16 @@ class Header extends React.Component {
       phoneOpen,
     });
   };
-
+  handleClick = ({item, key, keyPath, domEvent}) => {
+    let url = item.props.children[1].props.url || '/'
+    console.log(url)
+  };
   render() {
     const { dataSource, isMobile, ...props } = this.props;
     const { phoneOpen } = this.state;
     const navData = dataSource.Menu.children;
     const navChildren = navData.map((item) => {
-      const { children: a, subItem, ...itemProps } = item;
+    const { children: a, subItem, ...itemProps } = item;
       if (subItem) {
         return (
           <SubMenu
@@ -44,7 +48,7 @@ class Header extends React.Component {
           >
             {subItem.map(($item, ii) => {
               const { children: childItem } = $item;
-              const child = childItem.href ? (
+                const child = childItem.href ? (
                 <a {...childItem}>
                   {childItem.children.map(getChildrenToRender)}
                 </a>
@@ -123,6 +127,7 @@ class Header extends React.Component {
               mode={isMobile ? 'inline' : 'horizontal'}
               defaultSelectedKeys={['sub0']}
               theme="dark"
+              onClick={this.handleClick}
             >
               {navChildren}
             </Menu>

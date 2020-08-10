@@ -1,19 +1,11 @@
 import React from 'react';
 import { enquireScreen } from 'enquire-js';
-
-import Nav from '../../components/Nav';
 import Banner from '../../components/Banner';
 import Feature from '../../components/Feature';
-import Footer from '../../components/Footer';
-
 import {
-  NavDataSource,
   BannerDataSource,
   FeatureDataSource,
-  FooterDataSource,
-} from './data.source';
-
-import './less/index.less';
+} from '../../utils/data.source';
 
 let isMobile;
 enquireScreen((b) => {
@@ -48,12 +40,6 @@ export default class Home extends React.Component {
 
   render() {
     const children = [
-      <Nav
-        id="Nav"
-        key="Nav"
-        dataSource={NavDataSource}
-        isMobile={this.state.isMobile}
-      />,
       <Banner
         id="Banner"
         key="Banner"
@@ -64,12 +50,6 @@ export default class Home extends React.Component {
         id="Feature"
         key="Feature"
         dataSource={FeatureDataSource}
-        isMobile={this.state.isMobile}
-      />,
-      <Footer
-        id="Footer"
-        key="Footer"
-        dataSource={FooterDataSource}
         isMobile={this.state.isMobile}
       />,
     ];

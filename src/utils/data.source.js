@@ -13,7 +13,7 @@ export const NavDataSource = {
         name: 'item0',
         className: 'header-item',
         children: {
-          href: '#',
+          url: '/',
           children: [
             {
               children: (
@@ -32,7 +32,7 @@ export const NavDataSource = {
         name: 'item1',
         className: 'header-item',
         children: {
-          href: '#',
+          url: 'product',
           children: [
             {
               children: (
@@ -52,7 +52,7 @@ export const NavDataSource = {
               className: 'item-sub-item',
               children: [
                 {
-                  name: 'image0',
+                  name: 'image',
                   className: 'item-image',
                   children:
                       'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
@@ -77,7 +77,7 @@ export const NavDataSource = {
               className: 'item-sub-item',
               children: [
                 {
-                  name: 'image0',
+                  name: 'image',
                   className: 'item-image',
                   children:
                       'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
@@ -102,7 +102,7 @@ export const NavDataSource = {
               className: 'item-sub-item',
               children: [
                 {
-                  name: 'image0',
+                  name: 'image',
                   className: 'item-image',
                   children:
                       'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
@@ -127,7 +127,7 @@ export const NavDataSource = {
               className: 'item-sub-item',
               children: [
                 {
-                  name: 'image0',
+                  name: 'image',
                   className: 'item-image',
                   children:
                       'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
@@ -151,7 +151,7 @@ export const NavDataSource = {
         name: 'item2',
         className: 'header-item',
         children: {
-          href: '#',
+          url: '',
           children: [
             {
               children: (
@@ -168,7 +168,7 @@ export const NavDataSource = {
         name: 'item3',
         className: 'header-item',
         children: {
-          href: '#',
+          url: '',
           children: [
             {
               children: (
@@ -185,7 +185,7 @@ export const NavDataSource = {
         name: 'item4',
         className: 'header-item',
         children: {
-          href: '#',
+          url: '/about',
           children: [
             {
               children: (
@@ -399,7 +399,7 @@ export const FooterDataSource = {
           children: [
             {
               name: 'link0',
-              href: '#',
+              url: '',
               children: (
                 <span>
                   <p>人事外包产品库</p>
@@ -408,7 +408,7 @@ export const FooterDataSource = {
             },
             {
               name: 'link1',
-              href: '#',
+              url: '',
               children: (
                 <span>
                   <p>税收筹划产品库</p>
@@ -417,7 +417,7 @@ export const FooterDataSource = {
             },
             {
               name: 'link2',
-              href: '#',
+              url: '',
               children: (
                 <span>
                   <span>
@@ -428,7 +428,7 @@ export const FooterDataSource = {
             },
             {
               name: 'link3',
-              href: '#',
+              url: '',
               children: (
                 <span>
                   <p>专家云</p>
@@ -447,7 +447,7 @@ export const FooterDataSource = {
         childWrapper: {
           children: [
             {
-              href: '#',
+              url: '',
               name: 'link0',
               children: (
                 <span>
@@ -458,7 +458,7 @@ export const FooterDataSource = {
               ),
             },
             {
-              href: '#',
+              url: '',
               name: 'link1',
               children: (
                 <span>
