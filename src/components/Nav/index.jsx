@@ -3,7 +3,7 @@ import TweenOne from 'rc-tween-one';
 import { Menu } from 'antd';
 import { getChildrenToRender } from '../../utils';
 import './nav.less';
-
+import { Link } from "react-router-dom"
 
 const { Item, SubMenu } = Menu;
 
@@ -22,8 +22,8 @@ class Header extends React.Component {
     });
   };
   handleClick = ({item, key, keyPath, domEvent}) => {
-    let url = item.props.children[1].props.url || '/'
-    console.log(url)
+    // let url = item.props.children[1].props.url || '/'
+    // console.log(url)
   };
   render() {
     const { dataSource, isMobile, ...props } = this.props;
@@ -68,9 +68,9 @@ class Header extends React.Component {
       }
       return (
         <Item key={item.name} {...itemProps}>
-          <a {...a} className={`header-item-block ${a.className}`.trim()}>
+          <Link {...a} className={`header-item-block ${a.className}`.trim()}>
             {a.children.map(getChildrenToRender)}
-          </a>
+          </Link>
         </Item>
       );
     });

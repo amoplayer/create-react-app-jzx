@@ -13,7 +13,7 @@ export const NavDataSource = {
         name: 'item0',
         className: 'header-item',
         children: {
-          url: '/',
+          to: '/',
           children: [
             {
               children: (
@@ -32,7 +32,7 @@ export const NavDataSource = {
         name: 'item1',
         className: 'header-item',
         children: {
-          url: 'product',
+          to: 'product',
           children: [
             {
               children: (
@@ -151,7 +151,7 @@ export const NavDataSource = {
         name: 'item2',
         className: 'header-item',
         children: {
-          url: '',
+          to: '',
           children: [
             {
               children: (
@@ -168,7 +168,7 @@ export const NavDataSource = {
         name: 'item3',
         className: 'header-item',
         children: {
-          url: '',
+          to: '',
           children: [
             {
               children: (
@@ -185,7 +185,7 @@ export const NavDataSource = {
         name: 'item4',
         className: 'header-item',
         children: {
-          url: '/about',
+          to: '/about',
           children: [
             {
               children: (
@@ -399,7 +399,7 @@ export const FooterDataSource = {
           children: [
             {
               name: 'link0',
-              url: '',
+              to: '',
               children: (
                 <span>
                   <p>人事外包产品库</p>
@@ -408,7 +408,7 @@ export const FooterDataSource = {
             },
             {
               name: 'link1',
-              url: '',
+              to: '',
               children: (
                 <span>
                   <p>税收筹划产品库</p>
@@ -417,7 +417,7 @@ export const FooterDataSource = {
             },
             {
               name: 'link2',
-              url: '',
+              to: '',
               children: (
                 <span>
                   <span>
@@ -428,7 +428,7 @@ export const FooterDataSource = {
             },
             {
               name: 'link3',
-              url: '',
+              to: '',
               children: (
                 <span>
                   <p>专家云</p>
@@ -447,7 +447,7 @@ export const FooterDataSource = {
         childWrapper: {
           children: [
             {
-              url: '',
+              to: '',
               name: 'link0',
               children: (
                 <span>
@@ -458,7 +458,7 @@ export const FooterDataSource = {
               ),
             },
             {
-              url: '',
+              to: '',
               name: 'link1',
               children: (
                 <span>
