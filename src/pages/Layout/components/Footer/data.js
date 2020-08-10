@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 
 export const FooterDataSource = {
     wrapper: { className: 'home-page-wrapper footer-wrapper' },
@@ -15,48 +16,42 @@ export const FooterDataSource = {
                 title: {
                     children: (
                         <span>
-              <p>三库一云</p>
-            </span>
+                            <p>三库一云</p>
+                         </span>
                     ),
                 },
                 childWrapper: {
                     children: [
                         {
                             name: 'link0',
-                            to: '',
                             children: (
-                                <span>
-                  <p>人事外包产品库</p>
-                </span>
+                            <span>
+                                <Link to='/'>人事外包产品库</Link>
+                             </span>
                             ),
                         },
                         {
                             name: 'link1',
-                            to: '',
                             children: (
                                 <span>
-                  <p>税收筹划产品库</p>
-                </span>
+                                    <Link to='/'>税收筹划产品库</Link>
+                                 </span>
                             ),
                         },
                         {
                             name: 'link2',
-                            to: '',
                             children: (
                                 <span>
-                  <span>
-                    <p>增值服务产品库</p>
-                  </span>
-                </span>
+                                     <Link to='/'>增值服务产品库</Link>
+                                 </span>
                             ),
                         },
                         {
                             name: 'link3',
-                            to: '',
                             children: (
                                 <span>
-                  <p>专家云</p>
-                </span>
+                                    <Link to='/'>专家云</Link>
+                                </span>
                             ),
                         },
                     ],
@@ -71,25 +66,19 @@ export const FooterDataSource = {
                 childWrapper: {
                     children: [
                         {
-                            to: '',
                             name: 'link0',
                             children: (
                                 <span>
-                  <span>
-                    <p>客服热线：4000098708</p>
-                  </span>
-                </span>
+                                    <p>客服热线：4000098708</p>
+                                 </span>
                             ),
                         },
                         {
-                            to: '',
                             name: 'link1',
                             children: (
                                 <span>
-                  <span>
-                    <p>商务合作：zhang.rong@esing.net (工作时段24小时回复)</p>
-                  </span>
-                </span>
+                                    <p>商务合作：zhang.rong@esing.net (工作时段24小时回复)</p>
+                                </span>
                             ),
                         },
                     ],
@@ -103,8 +92,8 @@ export const FooterDataSource = {
                 title: {
                     children: (
                         <span>
-              <p>公众号</p>
-            </span>
+                            <p>公众号</p>
+                         </span>
                     ),
                 },
                 childWrapper: {
@@ -126,12 +115,8 @@ export const FooterDataSource = {
                 title: {
                     children: (
                         <span>
-              <span>
-                <span>
-                  <p>人力宝</p>
-                </span>
-              </span>
-            </span>
+                            <p>人力宝</p>
+                        </span>
                     ),
                 },
                 childWrapper: {
@@ -152,12 +137,12 @@ export const FooterDataSource = {
     copyright: {
         className: 'copyright',
         children: (
-            <span>
-        <span>©</span>
         <span>
-          浙ICP备19043834号-1&nbsp; &nbsp; &nbsp; &nbsp;
-        </span>浙江益兴劳务服务有限公司
-      </span>
+            <span>©</span>
+            <span>
+              浙ICP备19043834号-1&nbsp; &nbsp; &nbsp; &nbsp;
+            </span>浙江益兴劳务服务有限公司
+        </span>
         ),
     },
 };
