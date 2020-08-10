@@ -6,8 +6,6 @@ ui 库 [Ant Design](https://ant.design/index-cn) 详细使用请点击查看
 
 # create-react-app-jzx
 
-环境 node 版本 11.8.0
-
 推荐使用 yarn
 
 ## 使用
