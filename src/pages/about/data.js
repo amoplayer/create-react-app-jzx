@@ -1,4 +1,8 @@
 import React from 'react';
+import gsjsImg from '../../assets/img/about/gsjs.jpg'
+import yuanjing from '../../assets/img/about/yuanjing.png'
+import shiming from '../../assets/img/about/shiming.png'
+import hexinjiazhiguan from '../../assets/img/about/hexinjiazhiguan.png'
 
 export const BannerDataSource = {
     wrapper: { className: 'banner kdflaz06unm-editor_css' },
@@ -41,9 +45,8 @@ export const FeatureDataSource = {
                     children: [
                         {
                             name: 'image',
-                            className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+                            className: 'content-block-icon-about',
+                            children: yuanjing,
                         },
                         {
                             name: 'title',
@@ -71,9 +74,8 @@ export const FeatureDataSource = {
                     children: [
                         {
                             name: 'image',
-                            className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+                            className: 'content-block-icon-about',
+                            children: shiming,
                         },
                         {
                             name: 'title',
@@ -101,9 +103,8 @@ export const FeatureDataSource = {
                     children: [
                         {
                             name: 'image',
-                            className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+                            className: 'content-block-icon-about',
+                            children: hexinjiazhiguan,
                         },
                         {
                             name: 'title',
@@ -284,7 +285,7 @@ export const FeatureLeftDataSource = {
     OverPack: { className: 'home-page feature-left', playScale: 0.3 },
     imgWrapper: { className: 'feature-left-img', md: 10, xs: 24 },
     img: {
-        children: 'https://zos.alipayobjects.com/rmsportal/tvQTfCupGUFKSfQ.png',
+        children: gsjsImg,
     },
     textWrapper: { className: 'feature-left-text', md: 14, xs: 24 },
     title: {
@@ -320,9 +321,7 @@ export const ContentDataSource = {
             {
                 name: 'title',
                 children: (
-                    <span>
-                        <p>Enterpriset Risk Control</p>
-                    </span>
+                    <p>Enterpriset Risk Control</p>
                 ),
                 className: 'title-h1',
             },
@@ -330,9 +329,7 @@ export const ContentDataSource = {
                 name: 'content',
                 className: 'title-content',
                 children: (
-                    <span>
-                        <p>企业大数据风控</p>
-                    </span>
+                    <p>企业大数据风控</p>
                 ),
             },
         ],
@@ -425,12 +422,17 @@ export const ContentBusinessDataSource = {
                 name: 'title',
                 children: (
                     <span>
-                        <span>
-                            <p>3000+企业用户的选择</p>
-                        </span>
+                        <p>3000+企业用户的选择</p>
+                    </span>
+                )
+            },
+            {
+                name: 'content',
+                children: (
+                    <span>
+                        <p>覆盖互联网、保险、房地产、物流运输、教育、企业服务、医药等众多领域</p>
                     </span>
                 ),
-                className: 'title-h1',
             },
         ],
     },

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import gzhImg from '../../../../assets/img/footer/gzh.jpeg'
+import xcxImg from '../../../../assets/img/footer/xcx.png'
+
 
 export const FooterDataSource = {
     wrapper: { className: 'home-page-wrapper footer-wrapper' },
@@ -99,16 +102,15 @@ export const FooterDataSource = {
                 childWrapper: {
                     children: [
                         {
-                            name: 'image~kdflxl41qzd',
-                            className: '',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/HzvPfCGNCtvGrdk.png',
+                            name: 'image',
+                            className: 'code-img',
+                            children: gzhImg,
                         },
                     ],
                 },
             },
             {
-                name: 'block~kdflqp2anyj',
+                name: 'block4',
                 xs: 24,
                 md: 6,
                 className: 'block',
@@ -122,10 +124,9 @@ export const FooterDataSource = {
                 childWrapper: {
                     children: [
                         {
-                            name: 'image~kdflxajvxu6',
-                            className: '',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/HzvPfCGNCtvGrdk.png',
+                            name: 'image',
+                            className: 'code-img',
+                            children: xcxImg,
                         },
                     ],
                 },

@@ -51,12 +51,6 @@ export const NavDataSource = {
                             className: 'item-sub-item',
                             children: [
                                 {
-                                    name: 'image',
-                                    className: 'item-image',
-                                    children:
-                                        'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                                },
-                                {
                                     name: 'title',
                                     className: 'item-title',
                                     children: '专家云',
@@ -76,12 +70,6 @@ export const NavDataSource = {
                         children: {
                             className: 'item-sub-item',
                             children: [
-                                {
-                                    name: 'image',
-                                    className: 'item-image',
-                                    children:
-                                        'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                                },
                                 {
                                     name: 'title',
                                     className: 'item-title',
@@ -103,12 +91,6 @@ export const NavDataSource = {
                             className: 'item-sub-item',
                             children: [
                                 {
-                                    name: 'image',
-                                    className: 'item-image',
-                                    children:
-                                        'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                                },
-                                {
                                     name: 'title',
                                     className: 'item-title',
                                     children: '税收筹划产品库',
@@ -128,12 +110,6 @@ export const NavDataSource = {
                         children: {
                             className: 'item-sub-item',
                             children: [
-                                {
-                                    name: 'image',
-                                    className: 'item-image',
-                                    children:
-                                        'https://gw.alipayobjects.com/zos/rmsportal/ruHbkzzMKShUpDYMEmHM.svg',
-                                },
                                 {
                                     name: 'title',
                                     className: 'item-title',

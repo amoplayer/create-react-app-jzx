@@ -9,7 +9,7 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import { Layout, BackTop } from 'antd';
+import { BackTop } from 'antd';
 
 import { routesList } from '../../router'
 
@@ -47,26 +47,24 @@ export default class ROUTER extends React.Component {
   render() {
     const children =
       <Router>
-        <Layout>
-          <Nav
+        <Nav
             id="Nav"
             key="Nav"
             isMobile={this.state.isMobile}
-          />
-          <Switch>
-            {
-              routesList.map((item, index) => {
-                return <Route exact path={item.path} key={index} component={item.component} />
-              })
+        />
+        <Switch>
+          {
+            routesList.map((item, index) => {
+              return <Route exact path={item.path} key={index} component={item.component} />
+            })
 
-            }
-            <Redirect to="/" />
-          </Switch>
-          <Footer
+          }
+          <Redirect to="/" />
+        </Switch>
+        <Footer
             id="Footer"
             key="Footer"
-          />
-        </Layout>
+        />
         <BackTop />
       </Router>;
     return (
