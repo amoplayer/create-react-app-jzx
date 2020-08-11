@@ -9,7 +9,7 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-import { Layout } from 'antd';
+import { Layout, BackTop } from 'antd';
 
 import { routesList } from '../../router'
 
@@ -67,6 +67,7 @@ export default class ROUTER extends React.Component {
             key="Footer"
           />
         </Layout>
+        <BackTop />
       </Router>;
     return (
       <div
