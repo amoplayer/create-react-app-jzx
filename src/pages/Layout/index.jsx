@@ -60,7 +60,7 @@ export default class ROUTER extends React.Component {
               })
 
             }
-            {/*<Redirect to="/" />*/}
+            <Redirect to="/" />
           </Switch>
           <Footer
             id="Footer"
