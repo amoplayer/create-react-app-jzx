@@ -46,6 +46,7 @@ export const NavDataSource = {
                     {
                         name: 'sub0',
                         className: 'item-sub',
+                        to:'/expertCloud',
                         children: {
                             className: 'item-sub-item',
                             children: [
@@ -71,6 +72,7 @@ export const NavDataSource = {
                     {
                         name: 'sub1',
                         className: 'item-sub',
+                        to:'/personnelProduct',
                         children: {
                             className: 'item-sub-item',
                             children: [
@@ -96,6 +98,7 @@ export const NavDataSource = {
                     {
                         name: 'sub2',
                         className: 'item-sub',
+                        to:'/taxProduct',
                         children: {
                             className: 'item-sub-item',
                             children: [
@@ -121,6 +124,7 @@ export const NavDataSource = {
                     {
                         name: 'sub3',
                         className: 'item-sub',
+                        to:'/valueAddedServices',
                         children: {
                             className: 'item-sub-item',
                             children: [

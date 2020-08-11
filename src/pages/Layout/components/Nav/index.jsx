@@ -60,7 +60,9 @@ class Header extends React.Component {
               );
               return (
                 <Item key={$item.name || ii.toString()} {...$item}>
-                  {child}
+                  <Link to={$item.to || '/'}>
+                    {child}
+                  </Link>
                 </Item>
               );
             })}
