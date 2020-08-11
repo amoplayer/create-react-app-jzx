@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom"
 
 export const BannerDataSource = {
     wrapper: { className: 'banner kdflaz06unm-editor_css' },
@@ -18,9 +19,9 @@ export const BannerDataSource = {
     button: {
         className: 'banner-button kdfle4njens-editor_css',
         children: (
-            <span>
+            <Link to='/about'>
                 <p>Learn More</p>
-             </span>
+            </Link>
         ),
     },
 };

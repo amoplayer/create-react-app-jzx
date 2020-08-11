@@ -19,10 +19,8 @@ export const NavDataSource = {
                         {
                             children: (
                                 <span>
-                  <span>
-                    <p>首页</p>
-                  </span>
-                </span>
+                                    <p>首页</p>
+                                </span>
                             ),
                             name: 'text',
                         },
@@ -33,13 +31,13 @@ export const NavDataSource = {
                 name: 'item1',
                 className: 'header-item',
                 children: {
-                    to: 'product',
+                    to: '/product',
                     children: [
                         {
                             children: (
                                 <span>
-                  <p>产品与解决方案</p>
-                </span>
+                                    <p>产品与解决方案</p>
+                                </span>
                             ),
                             name: 'text',
                         },
@@ -157,8 +155,8 @@ export const NavDataSource = {
                         {
                             children: (
                                 <span>
-                  <p>职位</p>
-                </span>
+                                    <p>职位</p>
+                                </span>
                             ),
                             name: 'text',
                         },
@@ -169,13 +167,13 @@ export const NavDataSource = {
                 name: 'item3',
                 className: 'header-item',
                 children: {
-                    to: '',
+                    to: '/news',
                     children: [
                         {
                             children: (
                                 <span>
-                  <p>新闻资讯</p>
-                </span>
+                                    <p>新闻资讯</p>
+                                 </span>
                             ),
                             name: 'text',
                         },
@@ -191,8 +189,8 @@ export const NavDataSource = {
                         {
                             children: (
                                 <span>
-                  <p>关于益兴</p>
-                </span>
+                                    <p>关于益兴</p>
+                                </span>
                             ),
                             name: 'text',
                         },

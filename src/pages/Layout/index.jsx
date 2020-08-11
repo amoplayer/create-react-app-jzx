@@ -5,11 +5,13 @@ import Footer from './components/Footer';
 import './less/index.less';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Switch,
+  Redirect
 } from 'react-router-dom';
 import { Layout } from 'antd';
-import home from '../home';
-import about from '../about';
+
+import { routesList } from '../../router'
 
 let isMobile;
 enquireScreen((b) => {
@@ -51,8 +53,15 @@ export default class ROUTER extends React.Component {
             key="Nav"
             isMobile={this.state.isMobile}
           />
-          <Route exact path="/" component={ home } />
-          <Route exact path="/about" component={ about } />
+          <Switch>
+            {
+              routesList.map((item, index) => {
+                return <Route exact path={item.path} key={index} component={item.component} />
+              })
+
+            }
+            <Redirect to="/" />
+          </Switch>
           <Footer
             id="Footer"
             key="Footer"
