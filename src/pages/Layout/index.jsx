@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 import './less/index.less';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
   Redirect
@@ -60,7 +60,7 @@ export default class ROUTER extends React.Component {
               })
 
             }
-            <Redirect to="/" />
+            {/*<Redirect to="/" />*/}
           </Switch>
           <Footer
             id="Footer"

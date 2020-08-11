@@ -31,7 +31,6 @@ export const NavDataSource = {
                 name: 'item1',
                 className: 'header-item',
                 children: {
-                    to: '/product',
                     children: [
                         {
                             children: (
@@ -150,7 +149,7 @@ export const NavDataSource = {
                 name: 'item2',
                 className: 'header-item',
                 children: {
-                    to: '',
+                    to: '/recruitMsg',
                     children: [
                         {
                             children: (
@@ -167,7 +166,7 @@ export const NavDataSource = {
                 name: 'item3',
                 className: 'header-item',
                 children: {
-                    to: '/news',
+                    to: '/message',
                     children: [
                         {
                             children: (

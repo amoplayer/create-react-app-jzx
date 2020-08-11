@@ -53,7 +53,6 @@ export default class Home extends React.Component {
           id="Banner_About"
           key="Banner_About"
           dataSource={BannerDataSource}
-          isMobile={this.state.isMobile}
       />,
       <FeatureLeft
           id="FeatureLeft_About"
@@ -65,25 +64,21 @@ export default class Home extends React.Component {
           id="Feature_About"
           key="Feature_About"
           dataSource={FeatureDataSource}
-          isMobile={this.state.isMobile}
       />,
       <FeatureCard
           id="FeatureCard_About"
           key="FeatureCard_About"
           dataSource={FeatureCardDataSource}
-          isMobile={this.state.isMobile}
       />,
       <Content
           id="Content_About"
           key="Content_About"
           dataSource={ContentDataSource}
-          isMobile={this.state.isMobile}
       />,
       <ContentBusiness
           id="ContentBusinessDataSource_About"
           key="ContentBusinessDataSource_About"
           dataSource={ContentBusinessDataSource}
-          isMobile={this.state.isMobile}
       />
     ];
     return (

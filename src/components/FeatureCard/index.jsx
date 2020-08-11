@@ -6,7 +6,7 @@ import { getChildrenToRender } from '../../utils';
 import './featureCard.less'
 
 function FeatureCard(props) {
-    const { dataSource, isMobile, ...tagProps } = props;
+    const { dataSource, ...tagProps } = props;
     const { blockWrapper, titleWrapper } = dataSource;
     const childrenToRender = blockWrapper.children.map((item, i) => (
         <Col {...item} key={i.toString()}>

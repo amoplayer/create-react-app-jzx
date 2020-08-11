@@ -7,7 +7,7 @@ import './feature.less';
 
 class Content extends React.PureComponent {
   render() {
-    const { dataSource, isMobile, ...props } = this.props;
+    const { dataSource, ...props } = this.props;
     const {
       wrapper,
       titleWrapper,

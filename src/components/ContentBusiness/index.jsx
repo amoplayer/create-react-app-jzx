@@ -23,7 +23,6 @@ class contentBusiness extends React.PureComponent {
         const { ...props } = this.props;
         const { dataSource } = props;
         delete props.dataSource;
-        delete props.isMobile;
         const childrenToRender = this.getChildrenToRender(
             dataSource.block.children
         );

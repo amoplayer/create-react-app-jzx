@@ -11,7 +11,6 @@ class Index extends React.PureComponent {
     const { ...currentProps } = this.props;
     const { dataSource } = currentProps;
     delete currentProps.dataSource;
-    delete currentProps.isMobile;
     return (
       <div {...currentProps} {...dataSource.wrapper}>
         <QueueAnim

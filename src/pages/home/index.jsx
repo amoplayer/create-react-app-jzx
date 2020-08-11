@@ -44,13 +44,11 @@ export default class Home extends React.Component {
         id="Banner"
         key="Banner"
         dataSource={BannerDataSource}
-        isMobile={this.state.isMobile}
       />,
       <Feature
         id="Feature"
         key="Feature"
         dataSource={FeatureDataSource}
-        isMobile={this.state.isMobile}
       />,
     ];
     return (
