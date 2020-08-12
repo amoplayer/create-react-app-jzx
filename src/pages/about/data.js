@@ -3,6 +3,10 @@ import gsjsImg from '../../assets/img/about/gsjs.jpg'
 import yuanjing from '../../assets/img/about/yuanjing.png'
 import shiming from '../../assets/img/about/shiming.png'
 import hexinjiazhiguan from '../../assets/img/about/hexinjiazhiguan.png'
+import gongxiangjingji from '../../assets/img/about/gongxiangjingji.png'
+import shuzifengkong from '../../assets/img/about/shuzifengkong.png'
+import zijinanquanbaolei from '../../assets/img/about/zijinanquanbaolei.png'
+
 
 export const BannerDataSource = {
     wrapper: { className: 'banner kdflaz06unm-editor_css' },
@@ -346,8 +350,7 @@ export const ContentDataSource = {
                 children: {
                     wrapper: { className: 'content-components-block-content' },
                     img: {
-                        children:
-                            'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                        children: shuzifengkong,
                     },
                     content: {
                         children: (
@@ -367,8 +370,7 @@ export const ContentDataSource = {
                 children: {
                     wrapper: { className: 'content-components-block-content' },
                     img: {
-                        children:
-                            'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                        children: gongxiangjingji,
                     },
                     content: {
                         children: (
@@ -388,8 +390,7 @@ export const ContentDataSource = {
                 children: {
                     wrapper: { className: 'content-components-block-content' },
                     img: {
-                        children:
-                            'https://t.alipayobjects.com/images/rmsweb/T11aVgXc4eXXXXXXXX.svg',
+                        children: zijinanquanbaolei,
                     },
                     content: {
                         children: (

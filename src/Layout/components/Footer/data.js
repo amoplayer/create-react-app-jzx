@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom"
-import gzhImg from '../../../../assets/img/footer/gzh.jpeg'
-import xcxImg from '../../../../assets/img/footer/xcx.png'
+import gzhImg from '../../../assets/img/footer/gzh.jpeg'
+import xcxImg from '../../../assets/img/footer/xcx.png'
 
 
 export const FooterDataSource = {
