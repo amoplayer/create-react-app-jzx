@@ -2,15 +2,14 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 import Banner from '../../components/Banner';
 import Feature from '../../components/Feature';
-import FeatureCard from '../../components/FeatureCard';
 import FeatureLeft from '../../components/FeatureLeft';
 import Content from '../../components/Content'
 import ContentBusiness from '../../components/ContentBusiness'
+import FeaterBubble from '../../components/FeaterBubble'
 
 import {
   FeatureDataSource,
   BannerDataSource,
-  FeatureCardDataSource,
   FeatureLeftDataSource,
   ContentDataSource,
   ContentBusinessDataSource
@@ -65,15 +64,14 @@ export default class Home extends React.Component {
           key="Feature_About"
           dataSource={FeatureDataSource}
       />,
-      <FeatureCard
-          id="FeatureCard_About"
-          key="FeatureCard_About"
-          dataSource={FeatureCardDataSource}
-      />,
       <Content
           id="Content_About"
           key="Content_About"
           dataSource={ContentDataSource}
+      />,
+      <FeaterBubble
+          id="FeaterBubble_About"
+          key="FeaterBubble_About"
       />,
       <ContentBusiness
           id="ContentBusinessDataSource_About"

@@ -2,7 +2,7 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import './less/index.less';
+import './style.less';
 import {
   HashRouter as Router,
   Route,

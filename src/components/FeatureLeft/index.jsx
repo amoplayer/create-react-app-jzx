@@ -3,7 +3,7 @@ import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import { Row, Col } from 'antd';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
-import './featureLeft.less'
+import './style.less'
 
 function FeatureLeft(props) {
     const { ...tagProps } = props;

@@ -4,7 +4,7 @@ import { DownOutlined } from '@ant-design/icons';
 import QueueAnim from 'rc-queue-anim';
 import TweenOne from 'rc-tween-one';
 import { isImg } from '../../utils';
-import './banner.less';
+import './style.less';
 
 class Index extends React.PureComponent {
   render() {

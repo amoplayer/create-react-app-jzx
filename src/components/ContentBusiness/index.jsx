@@ -3,7 +3,7 @@ import { Row, Col } from 'antd';
 import { TweenOneGroup } from 'rc-tween-one';
 import OverPack from 'rc-scroll-anim/lib/ScrollOverPack';
 import { getChildrenToRender } from '../../utils';
-import './ContentBusiness.less.less'
+import './style.less'
 
 class contentBusiness extends React.PureComponent {
     getChildrenToRender = (data) =>

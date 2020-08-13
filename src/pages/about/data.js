@@ -3,10 +3,6 @@ import gsjsImg from '../../assets/img/about/gsjs.jpg'
 import yuanjing from '../../assets/img/about/yuanjing.png'
 import shiming from '../../assets/img/about/shiming.png'
 import hexinjiazhiguan from '../../assets/img/about/hexinjiazhiguan.png'
-import gongxiangjingji from '../../assets/img/about/gongxiangjingji.png'
-import shuzifengkong from '../../assets/img/about/shuzifengkong.png'
-import zijinanquanbaolei from '../../assets/img/about/zijinanquanbaolei.png'
-
 
 export const BannerDataSource = {
     wrapper: { className: 'banner kdflaz06unm-editor_css' },
@@ -130,159 +126,159 @@ export const FeatureDataSource = {
     },
 };
 
-export const FeatureCardDataSource = {
-    wrapper: { className: 'home-page-wrapper feature-card-wrapper' },
-    page: { className: 'home-page feature-card' },
-    OverPack: { playScale: 0.3 },
-    titleWrapper: {
-        className: 'feature-card-title-wrapper',
-        children: [
-            {
-                name: 'title',
-                className: 'feature-card-title-h1',
-                children: (
-                    <span>
-                        <p>COMPANY CULTURE</p>
-                    </span>
-                ),
-            },
-            {
-                name: 'content',
-                className: 'feature-card-title-content',
-                children: (
-                    <span>
-                        <p>公司理念</p>
-                    </span>
-                ),
-            },
-        ],
-    },
-    blockWrapper: {
-        className: 'feature-card-block-wrapper',
-        gutter: 24,
-        children: [
-            {
-                md: 8,
-                xs: 24,
-                name: 'block0',
-                className: 'feature-card-block',
-                children: {
-                    className: 'feature-card-block-group',
-                    children: [
-                        {
-                            name: 'image',
-                            className: 'feature-card-block-image',
-                            children:
-                                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
-                        },
-                        {
-                            name: 'title',
-                            className: 'feature-card-block-title',
-                            children: (
-                                <span>
-                                    <p>风控先行</p>
-                                </span>
-                            ),
-                        },
-                        {
-                            name: 'content',
-                            className: 'feature-card-block-content',
-                            children: (
-                                <span>
-                                    <p>
-                                      公司定位：数字风控，360°安全守护，用安全、合规、高效服务大众
-                                    </p>
-                                </span>
-                            ),
-                        },
-                    ],
-                },
-            },
-            {
-                md: 8,
-                xs: 24,
-                name: 'block~kdnxm0608ca',
-                className: 'feature-card-block',
-                children: {
-                    className: 'feature-card-block-group',
-                    children: [
-                        {
-                            name: 'image',
-                            className: 'feature-card-block-image',
-                            children:
-                                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
-                        },
-                        {
-                            name: 'title',
-                            className: 'feature-card-block-title',
-                            children: (
-                                <span>
-                                    <span>
-                                       <p>专业极致</p>
-                                    </span>
-                                </span>
-                            ),
-                        },
-                        {
-                            name: 'content',
-                            className: 'feature-card-block-content',
-                            children: (
-                                <span>
-                                    <p>
-                                        经营理念："为我所有"到"为我所用"的企业经营管理新思维
-                                    </p>
-                                </span>
-                            ),
-                        },
-                    ],
-                },
-            },
-            {
-                md: 8,
-                xs: 24,
-                name: 'block~kdnxm0wpcq',
-                className: 'feature-card-block',
-                children: {
-                    className: 'feature-card-block-group',
-                    children: [
-                        {
-                            name: 'image',
-                            className: 'feature-card-block-image',
-                            children:
-                                'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
-                        },
-                        {
-                            name: 'title',
-                            className: 'feature-card-block-title',
-                            children: (
-                                <span>
-                                    <span>
-                                        <p>合作共赢</p>
-                                    </span>
-                                </span>
-                            ),
-                        },
-                        {
-                            name: 'content',
-                            className: 'feature-card-block-content',
-                            children: (
-                                <span>
-                                    <span>
-                                        <span>
-                                            <p>
-                                                团队管理：尊重人才，敬重专业，员工与公司共发展，以服务赢得市场，以品质满意客户
-                                            </p>
-                                        </span>
-                                    </span>
-                                </span>
-                            ),
-                        },
-                    ],
-                },
-            },
-        ],
-    },
-};
+// {/*export const FeatureCardDataSource = {*/}
+//     wrapper: { className: 'home-page-wrapper feature-card-wrapper' },
+//     page: { className: 'home-page feature-card' },
+//     OverPack: { playScale: 0.3 },
+//     titleWrapper: {
+//         className: 'feature-card-title-wrapper',
+//         children: [
+//             {
+//                 name: 'title',
+//                 className: 'feature-card-title-h1',
+//                 children: (
+//                     <span>
+//                         <p>COMPANY CULTURE</p>
+//                     </span>
+//                 ),
+//             },
+//             {
+//                 name: 'content',
+//                 className: 'feature-card-title-content',
+//                 children: (
+//                     <span>
+//                         <p>公司理念</p>
+//                     </span>
+//                 ),
+//             },
+//         ],
+//     },
+//     blockWrapper: {
+//         className: 'feature-card-block-wrapper',
+//         gutter: 24,
+//         children: [
+//             {
+//                 md: 8,
+//                 xs: 24,
+//                 name: 'block0',
+//                 className: 'feature-card-block',
+//                 children: {
+//                     className: 'feature-card-block-group',
+//                     children: [
+//                         {
+//                             name: 'image',
+//                             className: 'feature-card-block-image',
+//                             children:
+//                                 'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+//                         },
+//                         {
+//                             name: 'title',
+//                             className: 'feature-card-block-title',
+//                             children: (
+//                                 <span>
+//                                     <p>风控先行</p>
+//                                 </span>
+//                             ),
+//                         },
+//                         {
+//                             name: 'content',
+//                             className: 'feature-card-block-content',
+//                             children: (
+//                                 <span>
+//                                     <p>
+//                                       公司定位：数字风控，360°安全守护，用安全、合规、高效服务大众
+//                                     </p>
+//                                 </span>
+//                             ),
+//                         },
+//                     ],
+//                 },
+//             },
+//             {
+//                 md: 8,
+//                 xs: 24,
+//                 name: 'block~kdnxm0608ca',
+//                 className: 'feature-card-block',
+//                 children: {
+//                     className: 'feature-card-block-group',
+//                     children: [
+//                         {
+//                             name: 'image',
+//                             className: 'feature-card-block-image',
+//                             children:
+//                                 'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+//                         },
+//                         {
+//                             name: 'title',
+//                             className: 'feature-card-block-title',
+//                             children: (
+//                                 <span>
+//                                     <span>
+//                                        <p>专业极致</p>
+//                                     </span>
+//                                 </span>
+//                             ),
+//                         },
+//                         {
+//                             name: 'content',
+//                             className: 'feature-card-block-content',
+//                             children: (
+//                                 <span>
+//                                     <p>
+//                                         经营理念："为我所有"到"为我所用"的企业经营管理新思维
+//                                     </p>
+//                                 </span>
+//                             ),
+//                         },
+//                     ],
+//                 },
+//             },
+//             {
+//                 md: 8,
+//                 xs: 24,
+//                 name: 'block~kdnxm0wpcq',
+//                 className: 'feature-card-block',
+//                 children: {
+//                     className: 'feature-card-block-group',
+//                     children: [
+//                         {
+//                             name: 'image',
+//                             className: 'feature-card-block-image',
+//                             children:
+//                                 'https://gw.alipayobjects.com/zos/basement_prod/e339fc34-b022-4cde-9607-675ca9e05231.svg',
+//                         },
+//                         {
+//                             name: 'title',
+//                             className: 'feature-card-block-title',
+//                             children: (
+//                                 <span>
+//                                     <span>
+//                                         <p>合作共赢</p>
+//                                     </span>
+//                                 </span>
+//                             ),
+//                         },
+//                         {
+//                             name: 'content',
+//                             className: 'feature-card-block-content',
+//                             children: (
+//                                 <span>
+//                                     <span>
+//                                         <span>
+//                                             <p>
+//                                                 团队管理：尊重人才，敬重专业，员工与公司共发展，以服务赢得市场，以品质满意客户
+//                                             </p>
+//                                         </span>
+//                                     </span>
+//                                 </span>
+//                             ),
+//                         },
+//                     ],
+//                 },
+//             },
+//         ],
+//     },
+// };
 
 export const FeatureLeftDataSource = {
     wrapper: { className: 'home-page-wrapper feature-left-wrapper' },
@@ -325,7 +321,7 @@ export const ContentDataSource = {
             {
                 name: 'title',
                 children: (
-                    <p>Enterpriset Risk Control</p>
+                    <p>COMPANY CULTURE</p>
                 ),
                 className: 'title-h1',
             },
@@ -333,7 +329,7 @@ export const ContentDataSource = {
                 name: 'content',
                 className: 'title-content',
                 children: (
-                    <p>企业大数据风控</p>
+                    <p>公司理念</p>
                 ),
             },
         ],
@@ -350,13 +346,13 @@ export const ContentDataSource = {
                 children: {
                     wrapper: { className: 'content-components-block-content' },
                     img: {
-                        children: shuzifengkong,
+                        children: 'https://gw.alipayobjects.com/zos/rmsportal/qIcZMXoztWjrnxzCNTHv.svg',
                     },
                     content: {
                         children: (
                             <span>
-                                <h3>数字风控加密</h3>
-                                <p>大数据验真、在线业务操作、安全不可篡改的完整证据流</p>
+                                <h3>风控先行</h3>
+                                <p>公司定位：数字风控，360°安全守护，用安全、合规、高效服务大众</p>
                             </span>
                         ),
                     },
@@ -370,13 +366,13 @@ export const ContentDataSource = {
                 children: {
                     wrapper: { className: 'content-components-block-content' },
                     img: {
-                        children: gongxiangjingji,
+                        children: 'https://gw.alipayobjects.com/zos/rmsportal/KtRzkMmxBuWCVjPbBgRY.svg',
                     },
                     content: {
                         children: (
                             <span>
-                                <h3>共享经济服务</h3>
-                                <p>自主研发经济积极服务平台，专属企业级账户，多维度管理，为企业高效发展保驾护航</p>
+                                <h3>专业极致</h3>
+                                <p>经营理念："为我所有"到"为我所用"的企业经营管理新思维</p>
                             </span>
                         ),
                     },
@@ -390,13 +386,13 @@ export const ContentDataSource = {
                 children: {
                     wrapper: { className: 'content-components-block-content' },
                     img: {
-                        children: zijinanquanbaolei,
+                        children: 'https://gw.alipayobjects.com/zos/rmsportal/eLtHtrKjXfabZfRchvVT.svg',
                     },
                     content: {
                         children: (
                             <span>
-                                <h3>资金安全堡垒</h3>
-                                <p>稳定安全的支付系统，业务、资金、账户安全、舆情预警系统，保障业务合法合规</p>
+                                <h3>合作共赢</h3>
+                                <p>团队管理：尊重人才，敬重专业，员工与公司共发展，以服务赢得市场，以品质满意客户</p>
                             </span>
                         ),
                     },
