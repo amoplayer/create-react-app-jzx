@@ -1,5 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom"
+import icon1 from '../../assets/img/home/icon1.png'
+import icon2 from '../../assets/img/home/icon2.png'
+import icon3 from '../../assets/img/home/icon3.png'
+import icon4 from '../../assets/img/home/icon4.png'
+import icon5 from '../../assets/img/home/icon5.png'
+import icon6 from '../../assets/img/home/icon6.png'
+
 
 export const BannerDataSource = {
     wrapper: { className: 'banner kdflaz06unm-editor_css' },
@@ -48,8 +55,7 @@ export const FeatureDataSource = {
                         {
                             name: 'image',
                             className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/WBnVOjtIlGWbzyQivuyq.png',
+                            children: icon1,
                         },
                         {
                             name: 'title',
@@ -70,8 +76,7 @@ export const FeatureDataSource = {
                         {
                             name: 'image',
                             className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/YPMsLQuCEXtuEkmXTTdk.png',
+                            children: icon2,
                         },
                         {
                             name: 'title',
@@ -92,8 +97,7 @@ export const FeatureDataSource = {
                         {
                             name: 'image',
                             className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+                            children: icon3,
                         },
                         {
                             name: 'title',
@@ -114,8 +118,7 @@ export const FeatureDataSource = {
                         {
                             name: 'image',
                             className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+                            children: icon4
                         },
                         {
                             name: 'title',
@@ -136,8 +139,7 @@ export const FeatureDataSource = {
                         {
                             name: 'image',
                             className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+                            children: icon5
                         },
                         {
                             name: 'title',
@@ -158,8 +160,7 @@ export const FeatureDataSource = {
                         {
                             name: 'image',
                             className: 'content-block-icon',
-                            children:
-                                'https://zos.alipayobjects.com/rmsportal/EkXWVvAaFJKCzhMmQYiX.png',
+                            children: icon6
                         },
                         {
                             name: 'title',
