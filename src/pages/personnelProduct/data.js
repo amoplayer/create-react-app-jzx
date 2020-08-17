@@ -1,4 +1,8 @@
 import React from 'react';
+import png1 from '../../assets/img/personnelProduct/1.png'
+import png2 from '../../assets/img/personnelProduct/2.png'
+import png3 from '../../assets/img/personnelProduct/3.png'
+import png4 from '../../assets/img/personnelProduct/4.png'
 
 export const BannerDataSource = {
     wrapper: { className: 'banner kdflaz06unm-editor_css' },
@@ -30,7 +34,7 @@ export const FeatureRightDataSource = {
     OverPack: { className: 'home-page feature-right', playScale: 0.3 },
     imgWrapper: { className: 'feature-right-img', md: 10, xs: 24 },
     img: {
-        children: 'https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png',
+        children: png1,
     },
     textWrapper: { className: 'feature-right-text', md: 14, xs: 24 },
     title: { className: 'feature-right-title', children: '劳务外包' },
@@ -46,7 +50,7 @@ export const FeatureLeftDataSource = {
     OverPack: { className: 'home-page feature-left', playScale: 0.3 },
     imgWrapper: { className: 'feature-left-img', md: 10, xs: 24 },
     img: {
-        children: 'https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png',
+        children: png2,
     },
     textWrapper: { className: 'feature-left-text', md: 14, xs: 24 },
     title: { className: 'feature-left-title', children: '劳务派遣' },
@@ -61,7 +65,7 @@ export const FeatureRightDataSource2 = {
     OverPack: { className: 'home-page feature-right', playScale: 0.3 },
     imgWrapper: { className: 'feature-right-img', md: 10, xs: 24 },
     img: {
-        children: 'https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png',
+        children: png3,
     },
     textWrapper: { className: 'feature-right-text', md: 14, xs: 24 },
     title: { className: 'feature-right-title', children: '招聘外包' },
@@ -77,7 +81,7 @@ export const FeatureLeftDataSource2 = {
     OverPack: { className: 'home-page feature-left', playScale: 0.3 },
     imgWrapper: { className: 'feature-left-img', md: 10, xs: 24 },
     img: {
-        children: 'https://zos.alipayobjects.com/rmsportal/nLzbeGQLPyBJoli.png',
+        children: png4,
     },
     textWrapper: { className: 'feature-left-text', md: 14, xs: 24 },
     title: { className: 'feature-left-title', children: '建筑劳务' },
