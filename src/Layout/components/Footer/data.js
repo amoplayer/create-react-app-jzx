@@ -29,7 +29,7 @@ export const FooterDataSource = {
                             name: 'link0',
                             children: (
                             <span>
-                                <Link to='/'>人事外包产品库</Link>
+                                <Link to='/personnelProduct'>人事外包产品库</Link>
                              </span>
                             ),
                         },
@@ -37,7 +37,7 @@ export const FooterDataSource = {
                             name: 'link1',
                             children: (
                                 <span>
-                                    <Link to='/'>税收筹划产品库</Link>
+                                    <Link to='/taxProduct'>税收筹划产品库</Link>
                                  </span>
                             ),
                         },
@@ -45,7 +45,7 @@ export const FooterDataSource = {
                             name: 'link2',
                             children: (
                                 <span>
-                                     <Link to='/'>增值服务产品库</Link>
+                                     <Link to='/valueAddedServices'>增值服务产品库</Link>
                                  </span>
                             ),
                         },
@@ -53,7 +53,7 @@ export const FooterDataSource = {
                             name: 'link3',
                             children: (
                                 <span>
-                                    <Link to='/'>专家云</Link>
+                                    <Link to='/expertCloud'>专家云</Link>
                                 </span>
                             ),
                         },

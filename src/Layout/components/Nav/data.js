@@ -146,7 +146,7 @@ export const NavDataSource = {
                 name: 'item3',
                 className: 'header-item',
                 children: {
-                    to: '/message',
+                    to: '/articleList',
                     children: [
                         {
                             children: (

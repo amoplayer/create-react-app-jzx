@@ -4,7 +4,7 @@ import expertCloud from '../pages/expertCloud'
 import personnelProduct from '../pages/personnelProduct'
 import taxProduct from '../pages/taxProduct'
 import valueAddedServices from '../pages/valueAddedServices'
-
+import articleList from '../pages/article/list'
 export default [
     {
         path: '/',
@@ -35,6 +35,11 @@ export default [
         path: '/valueAddedServices',
         name: 'valueAddedServices',
         component: valueAddedServices
+    },
+    {
+        path: '/articleList',
+        name: 'articleList',
+        component: articleList
     }
 ]
 
