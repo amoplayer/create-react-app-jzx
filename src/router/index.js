@@ -2,7 +2,10 @@ import home from '../pages/home'
 import about from '../pages/about'
 import expertCloud from '../pages/expertCloud'
 import personnelProduct from '../pages/personnelProduct'
-export const routesList = [
+import taxProduct from '../pages/taxProduct'
+import valueAddedServices from '../pages/valueAddedServices'
+
+export default [
     {
         path: '/',
         name: 'home',
@@ -22,6 +25,16 @@ export const routesList = [
         path: '/personnelProduct',
         name: 'personnelProduct',
         component: personnelProduct
+    },
+    {
+        path: '/taxProduct',
+        name: 'taxProduct',
+        component: taxProduct
+    },
+    {
+        path: '/valueAddedServices',
+        name: 'valueAddedServices',
+        component: valueAddedServices
     }
 ]
 

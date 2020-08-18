@@ -16,7 +16,7 @@ export const BannerDataSource = {
     content: {
         className: 'banner-content kdfle0wr33p-editor_css',
         children: (
-            <p>expert Cloud</p>
+            <p>Expert Cloud</p>
         ),
     },
     button: {

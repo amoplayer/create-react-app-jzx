@@ -1,11 +1,11 @@
 import React from 'react';
-
+import logo from '../../../assets/img/nav/logo.png'
 export const NavDataSource = {
     wrapper: { className: 'header home-page-wrapper kdfllcy10k-editor_css' },
     page: { className: 'home-page' },
     logo: {
         className: 'header-logo',
-        children: 'https://os.alipayobjects.com/rmsportal/mlcYmsRilwraoAe.svg',
+        children: logo,
     },
     Menu: {
         className: 'header-menu',

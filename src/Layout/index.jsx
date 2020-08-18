@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 import { BackTop } from 'antd';
 
-import { routesList } from '../router'
+import routesList from '../router'
 
 let isMobile;
 enquireScreen((b) => {

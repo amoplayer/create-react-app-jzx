@@ -14,7 +14,7 @@ const resolve = require('resolve');
 function getAdditionalModulePaths(options = {}) {
   const baseUrl = options.baseUrl;
 
-  // We need to explicitly check for null and undefined (and not a falsy value) because
+  // We need to explicitly check for null and undefined (and not a falsy valueAddedServices) because
   // TypeScript treats an empty string as `.`.
   if (baseUrl == null) {
     // If there's no baseUrl set we respect NODE_PATH
