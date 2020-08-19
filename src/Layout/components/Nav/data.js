@@ -134,7 +134,7 @@ export const NavDataSource = {
                         {
                             children: (
                                 <span>
-                                    <p>职位</p>
+                                    <p>岗位招聘</p>
                                 </span>
                             ),
                             name: 'text',

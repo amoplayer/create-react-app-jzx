@@ -55,7 +55,7 @@ export default class articleList extends React.Component {
         const loadMore =
             !initLoading && !loading ? (
                 <div className="article-list-more">
-                    <Button onClick={ this.onLoadMore }>浏览更多</Button>
+                    <Button size="large" onClick={ this.onLoadMore }>浏览更多</Button>
                 </div>
             ) : null;
         // 列表
@@ -85,7 +85,7 @@ export default class articleList extends React.Component {
                 )}
             />
 
-        return [
+        const children = [
             <Banner
                 id="Banner"
                 key="Banner"
@@ -95,5 +95,18 @@ export default class articleList extends React.Component {
                 {articleList}
             </div>
         ]
+
+        return (
+            <div
+                className="templates-wrapper"
+                ref={(d) => {
+                    this.dom = d;
+                }}
+            >
+                { children }
+            </div>
+        )
+
+
     }
 }

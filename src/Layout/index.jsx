@@ -57,7 +57,6 @@ export default class ROUTER extends React.Component {
             routesList.map((item, index) => {
               return <Route exact path={item.path} key={index} component={item.component} />
             })
-
           }
           <Redirect to="/" />
         </Switch>

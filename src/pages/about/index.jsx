@@ -81,7 +81,6 @@ export default class Home extends React.Component {
     ];
     return (
         <div
-            className="templates-wrapper"
             ref={(d) => {
               this.dom = d;
             }}

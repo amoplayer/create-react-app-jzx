@@ -62,8 +62,12 @@ export default class articleList extends React.Component {
                                <List.Item>
                                    <Skeleton avatar title={ false } loading={ item.loading } active>
                                        <List.Item.Meta
-                                           title={ <Link to="/articleDetails">{item.name}</Link> }
-                                           description={ parseTime(item.createTime) }
+                                           title={
+                                               <Link to="/articleDetails">{item.name}</Link>
+                                           }
+                                           description={
+                                               parseTime(item.createTime)
+                                           }
                                        />
                                        <div className="article-details-time"></div>
                                    </Skeleton>
