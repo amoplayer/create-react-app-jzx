@@ -66,7 +66,11 @@ export default class articleList extends React.Component {
                 loadMore={ loadMore }
                 dataSource={ list }
                 renderItem={ item => (
-                    <List.Item>
+                    <List.Item
+                        actions={[
+                            parseTime(item.createTime),
+                        ]}
+                    >
                         <Skeleton avatar title={ false } loading={ item.loading } active>
                             <List.Item.Meta
                                 avatar={
@@ -79,7 +83,6 @@ export default class articleList extends React.Component {
                                     item.info ? textReplace(item.info, 150, 100) : ''
                                 }
                             />
-                            <div className="article-list-time">{ parseTime(item.createTime) }</div>
                         </Skeleton>
                     </List.Item>
                 )}

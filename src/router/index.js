@@ -6,6 +6,8 @@ import taxProduct from '../pages/taxProduct'
 import valueAddedServices from '../pages/valueAddedServices'
 import articleList from '../pages/article/list'
 import articleDetails from '../pages/article/details'
+import recruitMsgList from '../pages/recruitMsg/list'
+import recruitMsgDetails from '../pages/recruitMsg/details'
 
 export default [
     {
@@ -47,6 +49,16 @@ export default [
         path: '/articleDetails',
         name: 'articleDetails',
         component: articleDetails
+    },
+    {
+        path: '/recruitMsgList',
+        name: 'recruitMsgList',
+        component: recruitMsgList
+    },
+    {
+        path: '/recruitMsgDetails',
+        name: 'recruitMsgDetails',
+        component: recruitMsgDetails
     }
 ]
 

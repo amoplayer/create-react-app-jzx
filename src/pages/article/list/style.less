@@ -13,9 +13,6 @@
     margin: 60px auto;
     padding: 40px;
     background: #fff;
-    .@{articleList}-time {
-      margin-left: 20px;
-    }
     .@{articleList}-more {
       text-align: center;
       margin: 12px;
@@ -39,13 +36,13 @@
     padding: 10px;
     .@{articleList}-content {
       padding: 10px;
-      .@{articleList}-time {
-        margin-left: auto;
-      }
       .ant-list-item {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: normal;
+        .ant-list-item-action {
+          margin-left: auto;
+        }
       }
     }
   }

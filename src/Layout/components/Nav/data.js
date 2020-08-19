@@ -129,7 +129,7 @@ export const NavDataSource = {
                 name: 'item2',
                 className: 'header-item',
                 children: {
-                    to: '/recruitMsg',
+                    to: '/recruitMsgList',
                     children: [
                         {
                             children: (
