@@ -1,0 +1,47 @@
+@import "../../../assets/style/index.less";
+
+@details: article-details;
+
+.@{details}-wrapper {
+  width: 100%;
+  background: #fafafa;
+  position: relative;
+  overflow: hidden;
+    .@{details}-content {
+      height: 100%;
+      max-width: 1200px;
+      position: relative;
+      margin: 40px auto;
+      display: flex;
+      justify-content: space-around;
+      .@{details}-msg,  .@{details}-sidebar {
+        background: #fff;
+        padding: 20px;
+        margin: 10px;
+      }
+      .@{details}-msg {
+        overflow: hidden;
+        width: 100%;
+        max-width: 800px;
+        h1 {
+          margin: 40px auto;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+      .@{details}-sidebar {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .@{details}-content {
+    flex-wrap: wrap;
+    .@{details}-sidebar {
+      max-width: 100% !important;
+    }
+  }
+}

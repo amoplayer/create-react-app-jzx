@@ -13,25 +13,40 @@
     margin: 60px auto;
     padding: 40px;
     background: #fff;
+    .@{articleList}-time {
+      margin-left: 20px;
+    }
     .@{articleList}-more {
       text-align: center;
       margin: 12px;
       height: 32px;
       line-height: 32px;
     }
+    .ant-list-item-meta-title {
+      font-size: 18px;
+    }
     .ant-avatar, .ant-skeleton-avatar-lg{
-      height: 150px;
-      width: 150px;
-      border-radius: 0;
+      > img:hover {
+        transition: all ease-out .4s;
+        transform:scale(1.2);
+      }
     }
   }
 }
 
 @media screen and (max-width: 767px) {
   .@{articleList}-wrapper {
+    padding: 10px;
     .@{articleList}-content {
       padding: 10px;
-      margin: 20px auto;
+      .@{articleList}-time {
+        margin-left: auto;
+      }
+      .ant-list-item {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: normal;
+      }
     }
   }
 }

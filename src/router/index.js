@@ -5,6 +5,8 @@ import personnelProduct from '../pages/personnelProduct'
 import taxProduct from '../pages/taxProduct'
 import valueAddedServices from '../pages/valueAddedServices'
 import articleList from '../pages/article/list'
+import articleDetails from '../pages/article/details'
+
 export default [
     {
         path: '/',
@@ -40,6 +42,11 @@ export default [
         path: '/articleList',
         name: 'articleList',
         component: articleList
+    },
+    {
+        path: '/articleDetails',
+        name: 'articleDetails',
+        component: articleDetails
     }
 ]
 
