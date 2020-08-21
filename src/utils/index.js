@@ -68,3 +68,35 @@ export const textReplace = (str, max, min)  => {
   let i = Math.floor(Math.random() * (max - min)) + min;
   return temp.slice(0, i)
 }
+
+export function isJSON(str) {
+  if (typeof str === 'string') {
+    try {
+      var obj = JSON.parse(str)
+      if (typeof obj === 'object' && obj) {
+        return true
+      } else {
+        return false
+      }
+    } catch (e) {
+      return false
+    }
+  }
+}
+
+
+export function getSearch(search) {
+  var pairs = search.slice(1).split('&');
+  var result = {};
+  pairs.forEach(function(pair) {
+    if (pair && pair.indexOf('=') !== -1) {
+      pair = pair.split('=');
+      //兼容写法
+      result[pair[0]] = result[
+          pair[0].toLocaleLowerCase()
+          ] = decodeURIComponent(pair[1] || '');
+    }
+  });
+
+  return JSON.parse(JSON.stringify(result));
+}

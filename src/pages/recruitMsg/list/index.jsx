@@ -7,7 +7,7 @@ import RecruitList from './components/list'
 const fakeDataUrl = 'http://47.97.191.34:3088/mobile/object/list'
 const { Search } = Input;
 const { TabPane } = Tabs;
-export default class recruit extends React.Component {
+export default class Recruit extends React.Component {
     state = {
         initLoading: true,
         loading: false,
@@ -16,7 +16,10 @@ export default class recruit extends React.Component {
         total: 0,
         params: {
             page: 1,
-            limit: 5
+            limit: 5,
+            searchParams: {
+                objectTypeThree: ''
+            }
         }
     }
 
@@ -24,14 +27,16 @@ export default class recruit extends React.Component {
         this.initData(this.state.params)
     }
 
-    initData(data) {
+    initData(data, type) {
         api.post(fakeDataUrl, data).then((res) => {
+            let list = type === 'Refresh' ? res.data.items : [...this.state.tempData, ...res.data.items]
+            let tempData = type === 'Refresh' ? res.data.items : [...this.state.tempData, ...res.data.items]
             this.setState(
                 {
                     loading: false,
                     initLoading: false,
-                    tempData: [...this.state.tempData, ...res.data.items],
-                    list: [...this.state.tempData, ...res.data.items],
+                    tempData: tempData,
+                    list: list,
                     total: res.data.total
                 },
                 () => {
@@ -52,10 +57,20 @@ export default class recruit extends React.Component {
         this.initData(this.state.params)
     }
     onSearch (event) {
-        console.log(event);
+        let params = this.state.params
+        params.searchParams.keyWord = event
+        this.setState({
+            params
+        })
+        this.initData(this.state.params, 'Refresh')
     }
     callback(event) {
-        console.log(event);
+        let params = this.state.params
+        params.searchParams.objectTypeThree = event
+        this.setState({
+            params: params
+        })
+        this.initData(this.state.params, 'Refresh')
     }
     render() {
         const { initLoading, loading, list, total, params } = this.state
@@ -72,16 +87,16 @@ export default class recruit extends React.Component {
             initLoading,
             list
         }
-        const searchTabs =  <Tabs defaultActiveKey="1" onChange={value => this.callback(value)}>
-            <TabPane tab="热招兼职" key="1">
+        const searchTabs =  <Tabs defaultActiveKey="" onChange={value => this.callback(value)}>、
+            <TabPane tab="热招兼职" key="">
             </TabPane>
-            <TabPane tab="线上兼职" key="2">
+            <TabPane tab="线上兼职" key="1">
             </TabPane>
-            <TabPane tab="短期兼职" key="3">
+            <TabPane tab="短期兼职" key="2">
             </TabPane>
-            <TabPane tab="周末兼职" key="4">
+            <TabPane tab="周末兼职" key="3">
             </TabPane>
-            <TabPane tab="长期兼职" key="5">
+            <TabPane tab="长期兼职" key="4">
             </TabPane>
         </Tabs>
         // const searchMenu = (
@@ -114,8 +129,8 @@ export default class recruit extends React.Component {
                 </div>
                 <div className="recruit-list-content">
                     <RecruitList dataSource={dataSource}/>
-                    <div className="recruit-list-sidebar">
-                    </div>
+                    {/*<div className="recruit-list-sidebar">*/}
+                    {/*</div>*/}
                 </div>
             </div>
         )
