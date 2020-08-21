@@ -7,6 +7,7 @@ import RecruitList from './components/list'
 const fakeDataUrl = 'http://47.97.191.34:3088/mobile/object/list'
 const { Search } = Input;
 const { TabPane } = Tabs;
+
 export default class Recruit extends React.Component {
     state = {
         initLoading: true,
@@ -129,8 +130,8 @@ export default class Recruit extends React.Component {
                 </div>
                 <div className="recruit-list-content">
                     <RecruitList dataSource={dataSource}/>
-                    {/*<div className="recruit-list-sidebar">*/}
-                    {/*</div>*/}
+                    <div className="recruit-list-sidebar">
+                    </div>
                 </div>
             </div>
         )

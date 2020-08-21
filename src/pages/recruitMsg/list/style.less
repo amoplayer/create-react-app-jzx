@@ -4,33 +4,36 @@
 .@{recruitList}-wrapper {
   width: 100%;
   background: #fafafa;
+  position: relative;
   overflow: hidden;
-  .@{recruitList}-search {
-    width: 100%;
+  .@{recruitList}-search-item, .@{recruitList}-content {
+    height: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: 40px auto;
+  }
+  .@{recruitList}-RecruitList, .@{recruitList}-sidebar{
     background: #fff;
-    padding: 30px;
+    margin: 0;
+  }
+  .@{recruitList}-search {
+    padding: 40px;
+    background: #fff;
+    width: 100%;
     .@{recruitList}-search-item {
-      max-width: 1200px;
-      margin: 0 auto;
       .recruit-list-search-input {
         max-width: 600px;
-        width: 100%;
       }
     }
   }
   .@{recruitList}-content {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    .@{recruitList}-RecruitList, .@{recruitList}-sidebar{
-      margin: 60px 0;
-      background: #fff;
-    }
     .@{recruitList}-RecruitList {
-      width: 100%;
-      max-width: 900px;
       padding: 40px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 850px;
       .@{recruitList}-more {
         text-align: center;
         margin: 12px;
@@ -39,19 +42,24 @@
       }
     }
     .@{recruitList}-sidebar {
-      float: right;
       width: 100%;
       max-width: 300px;
-      height: 500px;
     }
   }
 }
 
-@media screen and (max-width: 767px) {
-  .@{recruitList}-sidebar {
-    display: none;
-  }
-  .ant-list-item-extra {
-    margin: 0!important;
+@media screen and (max-width: 1200px) {
+  .@{recruitList}-content {
+    flex-wrap: wrap;
+    justify-content: space-around!important;
+    .@{recruitList}-search {
+      padding: 10px!important;
+    }
+    .ant-list-item-extra {
+      margin: 0!important;
+    }
+    .@{recruitList}-sidebar {
+      max-width: 100% !important;
+    }
   }
 }

@@ -13,16 +13,16 @@
       position: relative;
       margin: 40px auto;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       .@{details}-msg,  .@{details}-sidebar {
         background: #fff;
         padding: 20px;
-        margin: 10px;
+        margin: 0;
       }
       .@{details}-msg {
         overflow: hidden;
         width: 100%;
-        max-width: 800px;
+        max-width: 850px;
         h1 {
           margin: 40px auto;
         }
@@ -37,7 +37,7 @@
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
   .@{details}-content {
     flex-wrap: wrap;
     .@{details}-sidebar {
