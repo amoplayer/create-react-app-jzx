@@ -1,14 +1,13 @@
-import {Button, List, Skeleton, Tag, Space} from 'antd'
-
+import  { Button, Input, Tabs } from 'antd'
+// import { DownOutlined } from '@ant-design/icons';
 import './style.less'
 import React from 'react'
-import {Link} from "react-router-dom"
 import * as api from '../../../utils/request'
-import {parseTime, textReplace} from '../../../utils'
-
+import RecruitList from './components/list'
 const fakeDataUrl = 'http://47.97.191.34:3088/mobile/object/list'
-
-export default class recruitList extends React.Component {
+const { Search } = Input;
+const { TabPane } = Tabs;
+export default class recruit extends React.Component {
     state = {
         initLoading: true,
         loading: false,
@@ -52,7 +51,12 @@ export default class recruitList extends React.Component {
         })
         this.initData(this.state.params)
     }
-
+    onSearch (event) {
+        console.log(event);
+    }
+    callback(event) {
+        console.log(event);
+    }
     render() {
         const { initLoading, loading, list, total, params } = this.state
         let ifMore = params.page < Math.ceil(total / params.limit) // 计算最后一夜
@@ -63,53 +67,58 @@ export default class recruitList extends React.Component {
                     <Button size="large" onClick={ this.onLoadMore }>浏览更多</Button>
                 </div>
             ) : null
-        // 列表
-        const recruitList = <List
-                className="recruit-list-content"
-                size="large"
-                loading={ initLoading }
-                itemLayout="vertical"
-                loadMore={ loadMore }
-                dataSource={ list }
-                renderItem={ item => (
-                    <List.Item
-                        actions={
-                            item.objectTag && item.objectTag.split(',').map(val => {
-                                return <Tag>{val}</Tag>
-                            })
-                        }
-                        extra={[
-                            <h3 key="extra1">公司名称: {item.objectOwner}</h3>,
-                            <div key="extra2">联系人: 张三</div>,
-                            <div key="extra3">联系人手机号: 18288888888</div>,
-                        ]}
-                    >
-                        <Skeleton avatar title={ false } loading={ item.loading } active>
-                            <List.Item.Meta
-                                title={ <Link to="/recruitDetails">{item.objectName} [ {item.workAddr} ]</Link> }
-                            />
-                            <Space size="large">
-                                <span>
-                                    { item.budgetAmount }
-                                </span>
-                                <span>
-                                    全职 兼职：线上
-                                </span>
-                            </Space>
-                        </Skeleton>
-                    </List.Item>
-                )}
-            />
-        const sidebar = <div>
-        </div>
-        const children = [
-            <div className="recruit-list-wrapper" key="recruitList">
-                {recruitList}
-                {sidebar}
-            </div>
-        ]
+        let dataSource = {
+            loadMore,
+            initLoading,
+            list
+        }
+        const searchTabs =  <Tabs defaultActiveKey="1" onChange={value => this.callback(value)}>
+            <TabPane tab="热招兼职" key="1">
+            </TabPane>
+            <TabPane tab="线上兼职" key="2">
+            </TabPane>
+            <TabPane tab="短期兼职" key="3">
+            </TabPane>
+            <TabPane tab="周末兼职" key="4">
+            </TabPane>
+            <TabPane tab="长期兼职" key="5">
+            </TabPane>
+        </Tabs>
+        // const searchMenu = (
+        //     <Dropdown overlay={
+        //         <Menu>
+        //             <Menu.Item>上午</Menu.Item>
+        //             <Menu.Item>下午</Menu.Item>
+        //             <Menu.Item>晚上</Menu.Item>
+        //             <Menu.Item>周末</Menu.Item>
+        //             <Menu.Item>工作日</Menu.Item>
+        //         </Menu>
+        //     }>
+        //         <div className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+        //             工作时间段<DownOutlined />
+        //         </div>
+        //     </Dropdown>
+        // )
         return (
-            children
+            <div className="recruit-list-wrapper">
+                <div className="recruit-list-search">
+                    <div className="recruit-list-search-item">
+                        {searchTabs}
+                        <Search
+                            placeholder="请输入搜索关键字"
+                            onSearch={value => this.onSearch(value)}
+                            size="large"
+                            className="recruit-list-search-input"
+                        />
+                    </div>
+                </div>
+                <div className="recruit-list-content">
+                    <RecruitList dataSource={dataSource}/>
+                    <div className="recruit-list-sidebar">
+                    </div>
+                </div>
+            </div>
         )
     }
 }
+
