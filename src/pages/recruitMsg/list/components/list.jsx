@@ -1,12 +1,15 @@
 import React from 'react';
 import { List, Skeleton, Tag, Space} from 'antd'
-import {Link} from "react-router-dom";
 import { dictionary }  from '../../../../utils/dictionary'
-import {isJSON} from '../../../../utils'
+import { isJSON } from '../../../../utils'
 import {
     CodeToText,
 } from 'element-china-area-data'
-class RecruitList extends React.PureComponent {
+
+class RecruitList extends React.Component {
+    linkToDetails = (event) => {
+        this.props.history.push({pathname:"/recruitMsgDetails", search: '?id=' + event.id });
+    }
     render() {
         const { dataSource } = this.props
         const { initLoading, list, loadMore } = dataSource;
@@ -48,7 +51,7 @@ class RecruitList extends React.PureComponent {
                     >
                         <Skeleton avatar title={ false } loading={ item.loading } active>
                             <List.Item.Meta
-                                title={ <Link  to={'/recruitMsgDetails?id=' + item.id}>{item.objectName} [ {item.workAddr} ]</Link> }
+                                title={ <a href="javascript:void(0)" onClick={() => this.linkToDetails(item)}>{item.objectName} [ {item.workAddr} ]</a> }
                             />
                             <Space size="large">
                                 <span>

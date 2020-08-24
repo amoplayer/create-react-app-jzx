@@ -21,22 +21,6 @@ const request = (url, config) => {
     });
 };
 
-// GET请求
-export const get = (url) => {
-    return request(url, {method: 'GET'});
-};
-
-// POST请求
-export const post = (url, data) => {
-    return request(url, {
-        body: format_data(data),
-        headers: {
-            'content-type': 'application/x-www-form-urlencoded'
-        },
-        method: 'POST'
-    });
-};
-
 function format_data (data) {
     var params = new URLSearchParams()
     for (var key in data) {
@@ -50,3 +34,14 @@ function format_data (data) {
     }
     return params
 }
+
+export default (event) => {
+    const { url, data, method } = event
+    return request(url, {
+        body: format_data(data),
+        headers: {
+            'content-type': 'application/x-www-form-urlencoded'
+        },
+        method: method || 'POST'
+    });
+};

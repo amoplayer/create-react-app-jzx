@@ -1,14 +1,12 @@
 import { Row, Col, Button } from 'antd';
 import './style.less'
 import React from 'react';
-import * as api from '../../../utils/request'
+import { objectInfo } from '../../../api'
 import { getSearch, isJSON } from '../../../utils'
 import { dictionary }  from '../../../utils/dictionary'
 import {
     CodeToText,
 } from 'element-china-area-data'
-
-const fakeDataUrl = 'http://47.97.191.34:3088/mobile/object/info';
 
 export default class RecruitMsgDetails extends React.Component {
     state = {
@@ -25,7 +23,7 @@ export default class RecruitMsgDetails extends React.Component {
     }
 
     initData(event) {
-        api.post(fakeDataUrl, event).then((res) => {
+        objectInfo(event).then((res) => {
             dictionary.payCycle.forEach(item => {
                 if (item.value === res.data.payCycle) {
                     res.data.payCycle = item.label

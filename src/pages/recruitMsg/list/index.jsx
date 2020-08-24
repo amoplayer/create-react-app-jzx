@@ -2,9 +2,8 @@ import  { Button, Input, Tabs } from 'antd'
 // import { DownOutlined } from '@ant-design/icons';
 import './style.less'
 import React from 'react'
-import * as api from '../../../utils/request'
 import RecruitList from './components/list'
-const fakeDataUrl = 'http://47.97.191.34:3088/mobile/object/list'
+import { objectList } from '../../../api'
 const { Search } = Input;
 const { TabPane } = Tabs;
 
@@ -29,7 +28,7 @@ export default class Recruit extends React.Component {
     }
 
     initData(data, type) {
-        api.post(fakeDataUrl, data).then((res) => {
+        objectList(data).then((res) => {
             let list = type === 'Refresh' ? res.data.items : [...this.state.tempData, ...res.data.items]
             let tempData = type === 'Refresh' ? res.data.items : [...this.state.tempData, ...res.data.items]
             this.setState(
@@ -129,7 +128,7 @@ export default class Recruit extends React.Component {
                     </div>
                 </div>
                 <div className="recruit-list-content">
-                    <RecruitList dataSource={dataSource}/>
+                    <RecruitList dataSource={dataSource} history={this.props.history}/>
                     <div className="recruit-list-sidebar">
                     </div>
                 </div>

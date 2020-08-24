@@ -1,11 +1,9 @@
 import { List, Skeleton } from 'antd';
 import './style.less'
 import React from 'react';
-import { Link } from "react-router-dom"
-import * as api from '../../../utils/request'
-import { parseTime } from '../../../utils'
+import {getSearch, parseTime} from '../../../utils'
+import { getIndex, getIndexInfo } from '../../../api'
 
-const fakeDataUrl = 'http://47.97.191.34:4088/manage/manpower/index/getIndex';
 
 export default class articleList extends React.Component {
     state = {
@@ -13,24 +11,41 @@ export default class articleList extends React.Component {
         loading: false,
         data: [],
         list: [],
-        params: {
-            page: 1,
-            limit: 5
-        }
+        params: {},
+        details: {}
     };
 
     componentDidMount() {
-        this.initData(this.state.params)
+        let params = {
+            id: getSearch(this.props.location.search).id || ''
+        }
+        this.initData()
+        this.initIfo(params)
     }
-
-    initData(data) {
-        api.get(fakeDataUrl, data).then((res) => {
+    initIfo() {
+        getIndexInfo({
+            id: getSearch(this.props.location.search).id
+        }).then(res => {
             this.setState(
                 {
                     loading: false,
                     initLoading: false,
-                    data: res.data,
-                    list: res.data
+                    details: res.data
+                }
+            );
+        })
+    }
+    initData(data) {
+        getIndex({
+            page: 1,
+            limit: 5
+        }).then((res) => {
+            this.setState(
+                {
+                    loading: false,
+                    initLoading: false,
+                    data: res.data.items,
+                    list: res.data.items
                 },
                 () => {
                     window.dispatchEvent(new Event('resize'));
@@ -38,17 +53,23 @@ export default class articleList extends React.Component {
             );
         })
     };
-
+    initSearch(event) {
+        this.props.history.push({pathname:"/articleDetails", search: '?id=' + event.id });
+        let  params = {
+            id: event.id || ''
+        }
+        this.initIfo(params)
+    }
     render() {
-        const { initLoading, list } = this.state;
-        const msg = { __html: list[1] ? list[1].info: '' }
+        const { initLoading, list, details } = this.state;
+        const msg = { __html: details ? details.info: '' }
         return (
             <div className="article-details-wrapper">
                <div className="article-details-content">
 
                    <div className="article-details-msg" >
-                       <h1>{list[1] ? list[1].name : ''}</h1>
-                       <div dangerouslySetInnerHTML={ msg }></div>
+                       <h1>{details ? details.name : ''}</h1>
+                       <div dangerouslySetInnerHTML={msg}/>
                    </div>
                    <div className="article-details-sidebar">
                        <div className="article-details-sidebar-title">
@@ -64,7 +85,7 @@ export default class articleList extends React.Component {
                                    <Skeleton avatar title={ false } loading={ item.loading } active>
                                        <List.Item.Meta
                                            title={
-                                               <Link to="/articleDetails">{item.name}</Link>
+                                               <a href="javascript:void(0)" onClick={() => this.initSearch(item)}>{item.name}</a>
                                            }
                                            description={
                                                parseTime(item.createTime)
