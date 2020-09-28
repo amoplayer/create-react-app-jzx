@@ -22,7 +22,7 @@ export const BannerDataSource = {
     button: {
         className: 'banner-button kdfle4njens-editor_css',
         children: (
-            <a href='http://api.yaotianrl.com/#/login' rel="noopener noreferrer" target="_blank">
+            <a href='#' rel="noopener noreferrer">
                 <p>Login</p>
             </a>
         ),

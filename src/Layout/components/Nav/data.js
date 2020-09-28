@@ -126,40 +126,6 @@ export const NavDataSource = {
                 ],
             },
             {
-                name: 'item2',
-                className: 'header-item',
-                children: {
-                    to: '/recruitMsgList',
-                    children: [
-                        {
-                            children: (
-                                <span>
-                                    <p>岗位招聘</p>
-                                </span>
-                            ),
-                            name: 'text',
-                        },
-                    ],
-                },
-            },
-            {
-                name: 'item3',
-                className: 'header-item',
-                children: {
-                    to: '/articleList',
-                    children: [
-                        {
-                            children: (
-                                <span>
-                                    <p>新闻资讯</p>
-                                 </span>
-                            ),
-                            name: 'text',
-                        },
-                    ],
-                },
-            },
-            {
                 name: 'item4',
                 className: 'header-item',
                 children: {
